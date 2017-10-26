@@ -1,0 +1,575 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+/*导航开始*/
+body,html{
+	width: 100%;
+	height: 100%;
+}
+body{
+	/*overflow: hidden;*/
+}
+nav{
+	width: 100%;
+	height: 100px;
+	background:#fff;
+}
+.nav-box{
+	width: 80%;
+	height: 100%;
+	margin-left:10%;
+}
+.nav-box>div{
+	width:38%;
+	height: 100%;
+	/*background: pink;*/
+	float: left;
+	font-size:26px ;
+	font-family: sans-serif;
+	line-height: 42px;
+	padding-top: 36px;
+	box-sizing: border-box;
+	text-align:right;
+	color: #c40000;
+	font-weight: bold;
+}
+.nav-box>div>span{
+	color: #ccc;
+}
+.nav-box>ul{
+	width: 52%;
+	height: 100%;
+	/*background: green;*/
+	float: right;
+	display: flex;
+	justify-content:space-around;
+	padding-top: 36px;
+	box-sizing: border-box;
+}
+.nav-box>ul>li{
+	width: 100px;
+	height: 40px;
+	border-radius: 6px;
+	font-size: 16px;
+	font-family: "微软雅黑";
+    text-align: center;
+    line-height: 40px;
+}
+.nav-box>ul>li:first-child{
+	background: #c40000;
+}
+.nav-box>ul>li:first-child>a{
+	color: #fff;
+}
+.nav-box>ul>li:hover{
+	background: #c40000;	
+}
+.nav-box>ul>li>a{
+	display: block;
+	width: 100%;
+	color: #000;
+}
+.nav-box>ul>li>a:hover{
+	color: #fff;
+}
+/*导航结束*/
+/* 头部开始 */
+header{
+	width:100%;
+	height: auto;
+	position: relative;
+	overflow:hidden;
+}
+.brand{
+	width: 100px;
+	height: 100px;
+	background: url(../img/brand.png) no-repeat center/cover;
+	position: absolute;
+	top: 33px;
+	left: 110px;
+}
+.head-box{
+	width:100%;
+	height:570px;
+	overflow:hidden;
+}
+.head-box>li{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 100%;
+}
+.head-box>li:first-child{
+	left:0;
+}
+.head-box>li>a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.head-box>li>a>img{
+	width: 112%;
+}
+.none{
+	display: none;
+}
+.block{
+	display: block;
+}
+
+.back{
+	width:41px; 
+	height: 69px;
+    text-align: center;
+    line-height: 69px;
+    font-size: 62px;
+    color: #727171;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-bottom: auto;
+    margin-top: auto;
+	left: 6px;
+}
+
+.forward{
+	width:41px; 
+	height: 69px;
+    text-align: center;
+    line-height: 69px;
+    font-size: 62px;
+    color: #727171;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-bottom: auto;
+    margin-top: auto;
+	right:28px;
+	
+}
+.back:hover,.forward:hover{
+	color: #c5bfbf;
+}
+.lunbodian{
+	width: 80px;
+	height: 10px;
+	position: absolute;
+	bottom: 25px;
+	right: 35px;
+}
+.lunbodian li{
+	height:6px;
+	width: 6px;
+	border: 2px solid rgba(135, 118,121, 0.6);
+	background: rgba(124, 139, 140, 1);
+	margin-right: 10px;
+	float: left;
+	border-radius: 50%;
+}
+.lunbodian li a{
+	height:100%;
+	width:100%;
+	display: block;
+}
+.lunbodian>.hot{
+	background:#001446;
+}
+.lunbodian li:hover{
+   background: #001446;
+}
+.lunbodian li:last-of-type{
+	margin-right:0;
+}
+
+/* 头部结束 */
+
+/*做好吃的水果开始*/
+.goodFruit{
+	width: 100%;
+	height: 650px;
+	background: #fff;
+}
+.good-box{
+	width: 80%;
+	height: 100%;
+	margin:0 auto;
+	/*background: yellow;*/
+	padding-top: 136px;
+	position: relative;
+	box-sizing: border-box;
+}
+.good-title{
+	width:100% ;
+	font-size: 24px;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	color: #000;
+}
+.good-desc{
+	width:50% ;
+	height: 145px;
+	font-size: 12px;
+	font-family: "微软雅黑";
+	color: #949494;
+	line-height: 24px;
+	margin-top: 32px;
+	border-bottom: 1px solid  #949494;
+}
+.fruit-brand{
+	position: absolute;
+	width: 230px;
+	height:314px;
+	top: 98px;
+	right: 184px;
+	overflow: hidden;
+	z-index: 2;
+	/*background: red;*/
+}
+.fruit-brand>img{
+	width: 100%;
+}
+.fruit-desc{
+	position: absolute;
+	width: 210px;
+	height:305px;
+	top: 73px;
+	right: 153px;
+	border: 2px solid #949494;
+	z-index: 1;
+}
+/*做好吃的水果结束*/
+/*中间插图开始*/
+.chatu{
+	width: 100%;
+	height: 230px;
+	/*background: blue;*/
+	overflow: hidden;
+}
+.chatu1{
+	position: absolute;
+	width: 218px;
+	height: 218px;
+	left: 0;
+	bottom:-10px;
+	background: #dc6e6e;
+	opacity: 0.8;
+}
+.chatu2{
+	position: absolute;
+	width: 400px;
+	height: 266px;
+	left: 70px;
+	bottom: -113px;
+	background: pink;
+	z-index: 2;
+}
+.chatu2>.img{
+	position: absolute;
+	width: 400px;
+	height: 266px;
+	left:0;
+	bottom: 0;
+	overflow: hidden;
+	z-index: 100;
+}
+.chatu2>.info{
+	position: absolute;
+	width: 400px;
+	height: 266px;
+	left:0;
+	bottom: 0;
+	overflow: hidden;
+	z-index: 0;
+	transform-style: preserve-3d;
+}
+.chatu2>.info>.info-back {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    padding-top: 63px;
+    background: #333333;
+    box-sizing: border-box;
+}
+
+.chatu2>.info h3 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px;
+    background: #111111;
+    margin: 0;
+}
+
+.chatu2>.info p {
+    font-style: normal;
+    font-size: 14px;
+    position: relative;
+    color: #bbb;
+    padding: 20px 20px 20px;
+    text-align: center;
+}
+
+.chatu2>.img {
+    transform-origin: 100% 50%;//属性允许您改变被转换元素的位置
+}
+
+.good-box .chatu2:hover .img{
+    transform: rotate3d(0,1,0,180deg);
+    //4个参数，前三个，对应x,y,z 轴，是标示你是否希望沿着该轴旋转，是为1，不是为0，最后一个标示旋转的角度。
+}
+
+
+.chatu>img,.chatu2>.img>img{
+	width: 100%;
+}
+/*中间插图结束*/
+/*蔬菜展示开始*/
+.show{
+	width: 100%;
+	height: 710px;
+	background: #fff;
+}
+
+.show-box{
+	width: 80%;
+	height: 100%;
+	margin:0 auto;
+	/*background: yellow;*/
+	padding-top: 136px;
+	box-sizing: border-box;
+}
+.show-cont{
+	width: 100%;
+	height:435px ;
+	/*background: pink;*/
+	display: flex;
+	justify-content: space-around;
+	margin-top: 73px;
+}
+.show-cont>li{
+	width: 25%;
+	height: 87%;
+	position: relative;
+	
+}
+.show-img{
+	display: block;
+	width: 100%;
+	height: 269px;
+	overflow: hidden;
+	background: #fff;
+	padding: 9px;
+	box-sizing: border-box;
+	box-shadow:0 0 2px 2px rgba(206,206,206,.2);
+}
+.show-img>img{
+	width: 100%;
+	transition: all 0.35s;
+}
+.show-desc{
+	width: 100%;
+	text-align: center;
+	line-height: 48px;
+	color:#949494;
+	font-size:14px ;
+	margin-top: 20px;
+	cursor: pointer;
+}
+.show-price{
+	width: 100%;
+	text-align: center;
+	line-height: 44px;
+	color:#c40000;
+	font-size:20px ;
+}
+.show-xian{
+	width: 100%;
+	height: 0;
+	border-bottom:1px dashed #949494;
+}
+.zhezhao{
+	width: 100%;
+	height: 269px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.6);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.35s ease-in-out;	
+    cursor: pointer;
+}
+.zhezhao h3 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px;
+    background: #111111;
+    margin: 50px 0 0 0;
+    transition: all 0.35s ease-in-out;
+}
+
+.zhezhao p {
+    font-style: italic;
+    font-size: 12px;
+    color: #bbb;
+    padding: 20px 20px 20px;
+    text-align: center;
+    transition: all 0.35s 0.1s linear;
+}
+
+.show-cont>li:hover .show-img>img {
+    transform: scale(1.2);
+}
+
+.show-cont>li:hover .zhezhao{
+    visibility: visible;
+    opacity: 1;
+}
+
+.zhezhao h3 {
+    transform: translateY(-100%);
+}
+
+.zhezhao p {
+    transform: translateY(100%);
+}
+
+.show-cont>li:hover .zhezhao>h3,
+.show-cont>li:hover .zhezhao>p {
+    transform: translateY(0);
+}
+/*.zhezhao:hover{
+	background: url(../img/zhezhao.png) no-repeat center;
+	background-size: 60px 60px;
+	cursor: pointer;
+}*/
+
+
+
+.mask{
+	width: 100%;
+	height: 100%;
+	background: #000;
+	position: fixed;
+	z-index: 99999;
+	top: 0;
+	left: 0;
+	box-shadow: 0 0 0 1000px rgba(0,0,0,1);
+	transform: scale(0,0);
+	transition: all .5s;
+}
+.mask-box{
+	width:370px;
+	height: 370px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+.mask-box>img{
+	width: 100%;
+	height: 100%;
+}
+
+.active{
+	transform: scale(1,1);
+	display: block;
+}
+.icon-guanbi{
+	position: absolute;
+	top: 130px;
+	right: 473px;
+	color: #fff;
+	font-size: 30px;
+	font-family: "iconfont";
+}
+.icon{
+	color: #fff;
+	font-size: 60px;
+	font-family: "iconfont";
+	position: absolute;
+	top: 50%;
+	margin-top: -30px;
+	
+}
+.icon-xiajiantou{
+	right: 300px;
+}
+.icon-houtui{
+	left: 300px;
+}
+/*蔬菜展示结束*/
+/*品牌文化开始*/
+.pinpai{
+	width: 100%;
+	height: 505px;
+	/*background: yellow;*/
+}
+.pinpai-left{
+	width: 50%;
+	height: 100%;
+	/*background: blue;*/
+	float: left;
+	overflow: hidden;
+}
+.pinpai-left>img{
+	width: 100%;
+}
+.pinpai-right{
+	width: 50%;
+	height: 100%;
+	background:#f8f8f8;
+	float: right;
+}
+.pinpai-right-cont{
+	width: 74%;
+	height: 70%;
+	/*background: red;*/
+	margin-left: 75px;
+	margin-top: 76px;
+	padding-top: 50px;
+	box-sizing: border-box;
+}
+.pinpai-title{
+	width: 100%;
+	line-height:64px ;
+	font-size: 24px;
+	font-weight: bold;
+	color: #000;
+	font-family: "微软雅黑";
+}
+.pinpai-cont{
+	width: 100%;
+	line-height:24px ;
+	font-size: 12px;
+	color: #949494;
+	font-family: "微软雅黑";
+}
+.pinpai-end{
+	width: 100%;
+	height: 0;
+	border-bottom: 1px solid #949494;
+	margin-top: 32px;
+}
+/*品牌文化结束*/
+/*底部*/
+footer{
+	width: 100%;
+	height: 110px;
+	background: #2b2b2b;
+	font-size: 20px;
+	font-family: sans-serif;
+	line-height: 110px;
+	color: #4d4d4d;
+	text-align: center;
+}
